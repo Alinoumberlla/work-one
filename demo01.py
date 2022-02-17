@@ -111,10 +111,123 @@
 #数组同样使用del命令 如 del a[0]
 
 #练习：获取用户输入的个人信息，并且存储到字典中。个人信息包括：name,age,sex
-name = str(input("请输入姓名:"))
-age = int(input("请输入年龄:"))
-sex = str(input("请输入性别:"))
-a = {"name":name,"age":age,"sex":sex}
-print(a)
+# x = str(input("请输入姓名:"))
+# y = int(input("请输入年龄:"))
+# z = str(input("请输入性别:"))
+# a = {"name":x,"age":y,"sex":z}
+# print(a)
+
+# a = {"name":"x","age":"y","sex":"z"}
+# a.update(name = str(input("请输入name:")))
+# a.update(age = int(input("请输入age:")))
+# a.update(sex = str(input("请输入sex:")))
+# print(a)
+
+#判断
+# a = 1
+# b = 2
+# if a > b:
+#     print(a)
+# else:
+#     print(b)
+
+# age = int(input("请输入你的年龄:"))
+# if age > 60:
+#     print("你应该退休啦!")
+# elif 30 < age <= 60:
+#     print("你的责任很重吧!")
+# elif 20 <= age <= 30:
+#     print("要好好规划自己的未来呀!")
+# else:
+#     print("要好好学习呀!")
+
+# a = 2
+# b = 2.0
+# print(id(a))
+# print(id(b))
+# print( a is not b)
+# print(a==b)
+
+# a = 1
+# b = [1,2,3,4,5]
+# c = [2,3,4,5,6]
+# print(a in b)
+# print(a not in b)
+# print(a not in c)
+# print(a in c)
+
+# a = input("请输入:")
+# if a in "0123456789":
+#     a = int(a)
+# else:
+#     print("请输入正确的年龄!")
+#     exit()
+# if a >= 5:
+#     print("大")
+# else:
+#     print("小")
+
+# a = 2.0
+# if type(a) is str:
+#     print("是字符串")
+# elif type(a) is int:
+#     print("是整形")
+# else:
+#     print("其他")
+
+#循环 while
+# a = 1
+# while a < 10:
+#     print("hahaha")
+#     a = a + 1
+
+#练习
+"""
+现在有10个学生成绩需要录入系统,
+10个学生名字分别为张三,李四,王麻子,浪静,流云,嘻嘻,小梁,二狗,成平安,猪猪,亚索
+并且名字和成绩需要对应上,而且大于60分和小于60分的需要分开存放。
+"""
+
+# a = {}
+# b = {}
+# c = ["张三","李四","王麻子","浪静","流云","嘻嘻","小梁","二狗","成平安","猪猪","亚索"]
+# x = 0
+# while x < 11:
+#     score = int(input("请输入成绩:"))
+#     if score >= 60:
+#         a[c[x]] = score
+#     else:
+#         b[c[x]] = score
+#     x = x + 1
+# print(a)
+# print(b)
+#想了一个小时的结果本来是只能循环不断更改a,b字典里面的值，不能新增。后来照着代码对着修改最终的结果。
+#下面是老师写的代码
+
+highscore = {}
+lowscore = {}
+studentlist = ["张三","李四","王麻子","浪静","流云","嘻嘻","小梁","二狗","成平安","猪猪","亚索"]
+a = 0
+while a < len(studentlist):
+    score = int(input("请输入"+studentlist[a]+"的成绩:"))
+    if score >=60:
+        highscore[studentlist[a]] = score
+    else:
+        lowscore[studentlist[a]] = score
+    a = a + 1
+print("大于60的:",highscore)
+print("小于60的:",lowscore)
+
+
+
+   
+
+
+
+
+
+
+
+
 
 
