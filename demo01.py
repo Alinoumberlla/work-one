@@ -45,9 +45,9 @@
 # a = "dhnihidhauihuiui hdiawuhidaiohdaowdih"
 # b = "wdbnujbhauidbhuiawbgdiuagbrfiugbaui hwuiahgruigha iwurgaiurgui"
 # print(len(a)+len(b)) #通过代码获取两段内容，并且计算他们两段长度之和
-a = len(input("请输入:"))
-b = len(input("请输入:"))
-print(a+b)
+# a = len(input("请输入:"))
+# b = len(input("请输入:"))
+# print(a+b)
 
 
 
