@@ -272,15 +272,13 @@
 #练习 使用代码实现一个注册的功能。用户输入账号和密码，要求账号长度是5-8位，密码6-12位，并且账号必须小写开头。
 #     储存到字典中，{username ： password}
 
-# x = 0
-# while x == 0:
+# while True:
 #     username = input("请输入账号:")
 #     if len(username) < 5 or len(username) > 8:
 #             print("账号长度为5-8位,请重新输入")
 #     else:
 #         print("账号可用")
-#         y = 0 
-#         while y == 0:
+#         while True:
 #                 password = input("请输入密码:")
 #                 if len(password) < 6 or len(password) > 12:
 #                     print("密码的长度为6-12位,请重新输入")
@@ -303,9 +301,32 @@
 # else:
 #     print("账号长度为5-8位,请重新输入")
 
+# for i in range(10):
+#     if i ==4:
+#         continue
+#     print(i)
+# #continue 越过某一次循环
 
+# for i in range(10):
+#     if i == 4:
+#         break
+#     print(i)
+#break 直接跳过4后的循环
 
+# #函数的定义
+# def checkname(username):
+#     if len(username) >=5 and len(username) <=8:
+#         if username[0] in "abcdefghijklmnopqrstuvwxyz":
+#             print("密码可用")
+#         else:
+#             print("账号首字母必须小写")    
+#     else:
+#         print("账号长度为5-8位,请重新输入")
 
+# checkname("aihuih")
 
-
-
+def jiafa():
+    a = int(input("请输入第一个数字:"))
+    b = int(input("请输入第二个数字:"))
+    print(a+b)
+jiafa()
